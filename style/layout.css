@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+
+	/* 헤더 */
+
+
+header, footer, .main_img {width: 100%;}
+
+header >.lnb{display: flex; justify-content: flex-end;}
+
+header >.sns{display: flex; justify-content: flex-end;}
+header >.sns > li{width:}
+header >.sns > li .fab{
+    color: #fff;
+    font-size: 30px; padding: 14px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    margin: 10px;
+    
+}
+header h1{text-align: center;}
+
+
+
+
+/* 내비게이션*/
+
+header> .gnb > ul{
+    display: flex;
+    width: 100%;
+    background-color: #af000d;
+}
+
+
+header> .gnb> ul>li{
+    width:13%;margin: 0px auto;
+}
+
+/* 메인 */
+main img{width: 100%;}
+.comeback{width: 1200px; margin: 0px auto; height: 600px; background-color: antiquewhite;}
+
+.sec02{display: flex;
+    justify-content: space-between;
+}
+
+.left{display: flex; flex-direction: column;}
+sec02 >.left> .news, .release{width: 70%; height: 200px; }
+sec02 >.left> .news{ background-color: #ffe8e8;}
+sec02 >.left> .release{background-color: #fd7171;}
+sec02 >.broad{width: 30%; height: 400px; background-color: #fda8a8;}

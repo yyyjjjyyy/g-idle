@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <title>(여자)아이들 홈페이지</title>
+
+        <!-- 파비콘 이미지 -->
+        <link rel="shortcut icon" type="image/x-icon" href="./images/pv-02.ico"/>
+
+        <!-- 초기화 -->
+        <link href="./style/reset.css" rel="stylesheet" type="text/css"/>
+
+        <!-- 공통서식 - 글꼴, 크기, 색상, 하이퍼링크 -->
+        <link href="./style/base.css" rel="stylesheet" type="text/css"/>
+
+        <!-- pc서식 최소 1024이상 -->
+        <link href="./style/pc.css" rel="stylesheet" type="text/css"/>
+
+        <!-- tablet 서식 최소 768 ~ 최대 1199px -->
+        <link href="./style/tablet.css" rel="stylesheet" type="text/css">
+
+        <!-- mobile 서식 최대 767px-->
+        <link href="./style/mobile.css" rel="stylesheet" type="text/css"/>
+
+        <!-- 아이콘 폰트 주소 -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            type="text/css"
+            rel="stylesheet"/>
+
+        <!--스와이프슬라이드-->
+        <link rel="stylesheet" href="./style/swiper.css">
+
+        <!--노토셰리프-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&display=swap"
+            rel="stylesheet">
+
+        <!--Playfair Display-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap"
+            rel="stylesheet">
+
+        <!--레이아웃 <link href="./style/layout.css" rel="stylesheet" type="text/css" />-->
+
+        <!--벤더프리픽스 css추가속성 사용시 각 브라우저별 접두사 붙이지 않아도 되는 스크립트.-->
+        <script src="./script/prefixfree.min.js"></script>
+
+        <!--제이쿼리 라이브러리-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- 토글 내비 -->
+        <script src="./script/script.js"></script>
+
+        <!-- 스와이퍼 <script src="./script/swiper.js" charset="utf-8"></script> -->
+        <script>
+            //사용자가 접속한 디바이스 체크하기
+            // var mobile_keys = new Array(
+            //     'iPhone',
+            //     'iPod',
+            //     'Android',
+            //     'BlackBerry',
+            //     'Windows Phone ',
+            //     'Windows CE ',
+            //     'LG ',
+            //     'MOT ',
+            //     'SAMSUNG ',
+            //     'SonyEricsson ',
+            //     'Nokia '
+            // );
+
+            // if (document.URL.match('move_pc_screen')) 
+            //     mobile_keys = null;
+            
+            // // URL 파라미터에 'move_pc_screen' 가 포함되어 있을 땐 적용안함 위 배열값 개수만큼 반복하여 검사를 하고 모바일 사용자이면
+            // // 아래 내용을 실행
+            // for (i in mobile_keys) { //in키워드 : 키값이 있으면 true 없으면 false
+
+            //     if (navigator.userAgent.match(mobile_keys[i]) != null) {
+            //         location.href = "http://yyjjyy.dothome.co.kr/idle/"; // 모바일 홈 연결
+
+            //         주소
+            //         break;
+            //     }
+            // }
+        </script>
+
+    </head>
+
+    <body>
+
+        <div id="wrap">
+            <!--헤더-->
+
+            <header>
+                <div>
+                    <!-- <nav class="lnb"> <a href="#" title="로그인">login</a> <a href="#"
+                    title="회원가입">join</a> </nav>-->
+
+                    <i class='fas fa-globe'></i>
+
+                    <h1>
+                        <a href="#" title="상단로고">
+                            <img src="./img/logo-w.png" alt="로고"></a>
+                    </h1>
+
+                    <i class="fas fa-bars toggle"></i>
+
+                </div>
+
+                <!-- <ul class="sns"> <li><a
+                href="https://www.youtube.com/channel/UCritGVo7pLJLUS8wEu32vow" title="아이들
+                유튜브채널"> <img src="./img/sns-02.png" alt="유튜브"> </a></li> <li><a
+                href="https://twitter.com/G_I_DLE" title="아이들 트위터"> <img src="./img/sns-04.png"
+                alt="트위터"></a></li> <li> <a
+                href="https://www.instagram.com/official_g_i_dle/?hl=ko" title="아이들 인스타그램"> <img
+                src="./img/sns-03.png" alt="인스타그램"> </a> </li> <li><a
+                href="https://ko-kr.facebook.com/G.I.DLE.CUBE/" title="아이들 페이스북"> <img
+                src="./img/sns-05.png" alt="페이스북"></a></li> </ul>-->
+
+                <nav class="gnb">
+                    <ul>
+                        <li>
+                            <a href="profile01.html" title="PROFILE">PROFILE</a>
+                        </li>
+
+                        <li>
+                            <a href="discography.html" title="DISCOGRAPHY">DISCOGRAPHY</a>
+                        </li>
+
+                        <li>
+                            <a href="media01.html" title="MEDIA">MEDIA</a>
+                        </li>
+
+                        <li>
+                            <a href="schedule.html" title="SCHEDULE">SCHEDULE</a>
+                        </li>
+
+                        <li>
+                            <a href="notice01.html" title="NOTICE">NOTICE</a>
+                        </li>
+
+                        <li>
+                            <a href="fan01.html" title="FAN TALK">FAN TALK</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- 메인 -->
+
+            <main>
+
+                <div class="main_img">
+                    <a href="#" title="메인이미지"><img src="./img/main01.jpg" alt="메인이미지"></a>
+                </div>
+
+                <div class="mobile_main">
+                    <a href="#" title="메인이미지"><img src="./img/m_main.png" alt="메인이미지"></a>
+                </div>
+
+                <section class="sec01">
+
+                    <article class="comeback">
+                        <h2 class="hr-sect">[ Last Dance ]</h2>
+                        <p>Release on<br>
+                            2021.04.29. 18:00</p>
+                        <div>
+                            <ul class="mv">
+                                <li>
+                                    <span>(G)I-DLE &#x0026; UNIVERSE MUSIC
+                                    </span>
+                                    ‘Last Dance (Prod. GroovyRoom)'
+                                    <br>
+                                    Official Music Video All Teaser.
+
+                                    <!-- <ul class="hwa"> <li> <img src="./img/idleicon-05.png" alt=""></li> <li>
+                                    <img src="./img/idleicon-06.png" alt=""></li> <li> <img
+                                    src="./img/idleicon-07.png" alt=""></li> </ul> -->
+                                </li>
+
+                                <li>
+                                    <!--<a href=""><img src="./img/EzpaEI6X0AMOs61.jpg" alt=""></a>-->
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JdvoH6I4PPM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </li>
+                            </ul>
+
+                            <article class="member_img">
+                                <!-- <ul> <li><a href="#" title=""><img src="./img/idle1-1.jpg" alt=""></a></li>
+                                <li><a href="#" title=""><img src="./img/idle1-2.jpg" alt=""></a></li> <li><a
+                                href="#" title=""><img src="./img/idle1-3.jpg" alt=""></a></li> <li><a href="#"
+                                title=""><img src="./img/idle1-4.jpg" alt=""></a></li> <li><a href="#"
+                                title=""><img src="./img/idle1-5.jpg" alt=""></a></li> <li><a href="#"
+                                title=""><img src="./img/idle1-6.jpg" alt=""></a></li> </ul>-->
+                                <ul>
+                                    <li>
+                                        <a href="#" title=""><img src="./img/EzfG-wIWQAEk0-0.jpg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title=""><img src="./img/EzfG-v5XIAAo8ub.jpg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title=""><img src="./img/EzfG-wPWYAIOQFz.jpg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title=""><img src="./img/EzkQfAhXIAEaKI0.jpg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title=""><img src="./img/EzkQfBAXsAI756k.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+
+                            </article>
+                        </div>
+                    </article>
+                </section>
+
+                <!-- 뉴스 / 공지 / -->
+
+                <section class="sec02">
+                    <div class="left">
+                        <article class="news">
+                            <h2>
+                                <i class="far fa-newspaper"></i>
+                                I-DLE news</h2>
+                            <div class="n_slide">
+                                <ul class="news_wrap">
+                                    <li>
+                                        <a
+                                            href="hhttps://n.news.naver.com/entertain/article/609/0000434963?lfrom=twitter"
+                                            title="(여자)아이들X그루비룸 ‘Last Dance’ 오늘(29일) 발매, 특급 시너지 예고 ">
+                                            <img src="./img/news.jpg" alt="아이들"></a>
+                                        <div>
+                                            <a
+                                                href="hhttps://n.news.naver.com/entertain/article/609/0000434963?lfrom=twitter"
+                                                title="(여자)아이들X그루비룸 ‘Last Dance’ 오늘(29일) 발매, 특급 시너지 예고 ">
+                                                <span class="title">
+                                                    (여자)아이들X그루비룸 ‘Last Dance’ 오늘(29일) 발매, 특급 시너지 예고</span>
+
+                                                <p>(여자)아이들의 ‘Last Dance (Prod. GroovyRoom)’가 오늘(29일) 발매된다. 엔씨소프트, 클렙(Klap) 측은
+                                                    “4월 29일 오후 6시 각종 온라인 음원 사이트를 통해 (여자)아이들의 신곡 ‘Last Dance (Prod. GroovyRoom)’를 발매,
+                                                    뮤직비디오 풀버전은 유니버스 앱에서 독점 공개한다”고 밝혔다.‘Last Dance (Prod. GroovyRoom)’는 걸그룹 (여자)아이들과
+                                                    대세 힙합 프로듀서 그루비룸이 만나 음악적 시너지를 발산한다. 그루비룸 특유의 세련된 사운드가 돋보이는 딥하우스 계열의 팝 장르로, 비트 위에
+                                                    (여자)아이들의 시크하면서 파워풀한 보컬과 랩이 더해져 듣는 재미를 선사하는 곡이다. (여자)아이들의 리더 소연이 탑라인 작업 및 랩 메이킹에
+                                                    참여해 ‘작곡돌’ 다운 면모를 드러냈으며, 다재 다능한 여성 싱어송라이터 크리즈(Kriz)가 공동 작사를 맡아 곡 콘셉트 ‘DARK
+                                                    WITCH(다크 위치)’에 걸맞은 매혹적인 가사로 완성했다. 특히, 한 편의 동화 같은 영상미와 그루비룸 특유의 감각적이고 몽환적인 비트가
+                                                    어우러진 뮤직비디오에 대한 기대감이 더해지고 있다. ‘Last Dance (Prod. GroovyRoom)’은 (여자)아이들의 강렬한 컨셉과
+                                                    화려한 퍼포먼스, 그루비룸의 완성도 높은 사운드를 모두 느낄 수 있는 곡으로 글로벌 음악 팬들의 눈과 귀를 만족시켜줄 예정이다.
+                                                    (사진=엔씨소프트/클렙(Klap), 하이어뮤직 제공)뉴스엔 박수인 abc159@ 기사제보 및 보도자료 newsen@newsen.com
+                                                    copyright&copy; 뉴스엔. 무단전재 &amp; 재배포 금지
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://entertain.naver.com/read?oid=241&aid=0003121682"
+                                            title="(여자)아이들 미연, 미모+음색 다 잡은 '블랙홀 매력'">
+                                            <img src="./img/n2.jpg" alt="미연"></a>
+                                        <div>
+                                            <a
+                                                href="hhttps://n.news.naver.com/entertain/article/609/0000434963?lfrom=twitter"
+                                                title="[이슈IS] (여자)아이들 미연, 미모+음색 다 잡은 '블랙홀 매력'">
+                                                <span class="title">
+                                                    (여자)아이들 미연, 오늘 '너는 나의 숨이였다' 발매</span>
+
+                                                <p>그룹 (여자)아이들 미연의 서정적 변신이 통했다. 비주얼에 가창력을 겸비한 블랙홀 매력으로 입덕 문을 열었다. 미연은 28일 디지털 싱글
+                                                    '너는 나의 숨이였다'를 발매하고 다양한 콘텐트를 공개했다. 유튜브 원더케이 채널에 올라온 라이브 클립은 발매 14시간만에 6만 뷰에 달하는
+                                                    조회수를 기록, 글로벌 팬들의 호평이 이어지고 있다. 이번 싱글은 CS해피엔터테인먼트의 CS넘버스(cs numbers) 앨범에 담길 예정이다.
+                                                    제작은 CS해피엔터테인먼트 대표이자 프로듀서인 전창식 사장이 맡았다 전 사장은 박상민 '해바라기', 성시경 '희재' 등을 히트시킨 바 있다. 전
+                                                    사장은 미연의 가능성을 알아보고 이번 프로젝트를 추진했다. 팀에서 메인보컬을 맡고 있는 미연은 이번 프로젝트를 통해 새로운 도전에 나섰다.
+                                                    그동안 보여준 (여자)아이들의 파워풀한 보컬을 내려놓고 서정적인 가사에 몰두했다. 그는 "서정적이고 아름다운 시 같은 가사가 담긴 노래다. 이런
+                                                    서정적인 곡을 불러볼 기회가 없어서 새로운 경험이고 감사한 경험"이라고 말했다. 노래는 팝 발라드 장르로 60인조 오케스트라가 웅장한 스케일로
+                                                    연주했다. 피아노엔 폴킴의 '너를 만나'를 만든 조셉케이가 참여했고 기타리스트 박신원이 아르페지오 연주를 선사했다. 가사에는 '널 잃은 그날
+                                                    세상이 멈추고/ 아픈 계절이 지나버린/ 이곳에는 나 혼자 남아있네...눈이 부시던 그날/ 나는 꽃이었다/ 너에게로 피어나/ 아픔이었어...그
+                                                    모든 날들이 눈부시게 빛이 났어/ 너는 나의 숨이였다'라며 사랑하는 사람을 보낸 아픔을 담았다. 미연의 맑은 보이스가 더해지면서, 사극의 애절한
+                                                    감정 신에 어울리는 분위기의 노래가 만들어졌다. 미연은 "로코베리 안영민 작곡가님과 재미있게 녹음했다. 곡이 워낙 좋다. 어려웠던 점은 평소에
+                                                    노래를 부를 때 힘을 못 뺀다. (여자)아이들 노래는 세고 강렬해서 습관이 돼 있다. 힘을 빼고 부르는 발라드는 어려워하는 부분인데 이번에
+                                                    녹음하면서 많이 배웠다. 또 내가 화음을 잘 못한다. 팀 곡 녹음할 때 화음은 민니가 많이 한다. 그동안 화음을 두려워했는데 오늘로서 공포증이
+                                                    줄어들었다"고 비하인드를 밝혔다. 황지영기자 hwang.jeeyoung@jtbc.co.kr
+
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://entertain.naver.com/read?oid=079&aid=0003506467"
+                                            title="(여자)아이들 소연, 솔로로 컴백한다">
+                                            <img src="./img/n3.jpg" alt="전소연"></a>
+                                        <div>
+                                            <a
+                                                href="hhttps://n.news.naver.com/entertain/article/609/0000434963?lfrom=twitter"
+                                                title="(여자)아이들 소연, 솔로로 컴백한다">
+                                                <span class="title">
+                                                    (여자)아이들 소연, 솔로로 컴백한다</span>
+                                                <p>6인조 여성 아이돌 그룹 (여자)아이들(미연·민니·수진·소연·우기·슈화) 리더 소연이 솔로 컴백을 준비 중이다. 소속사 큐브엔터테인먼트
+                                                    관계자는 21일 CBS노컷뉴스에 "전소연이 솔로 컴백 준비 중인 것은 맞다. 시기는 조율 중"이라고 밝혔다. 소연은 2018년 데뷔한
+                                                    (여자)아이들의 리더다. (여자)아이들은 그동안 '라타타'(LATATA), '한'(一), '라이언'(LION), '덤디덤디'(DUMDi
+                                                    DUMDi), '오 마이 갓'(Oh my god), '화'(火花) 등의 곡으로 사랑받았다. 소연은 데뷔곡 '라타타'를 비롯해
+                                                    '어-오'(Uh-Oh), '오 마이 갓', '라이언', '한', '덤디덤디', '화' 등 (여자)아이들 타이틀곡 작곡에 참여했고 에이핑크
+                                                    김남주의 '버드'(Bird), 효연(HYO)의 '디저트'(DESSERT) 등 타 가수 곡도 작업했다. 2016년 엠넷 힙합 서바이벌 오디션
+                                                    '언프리티 랩스타 3'에 출연했던 소연은 2017년 '젤리'(Jelly), '아이들 쏭'(Idle song) 등의 싱글을 발매했다.
+                                                    <br>[CBS노컷뉴스 김수정 기자]
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                                <i class="fas fa-chevron-circle-left"></i>
+                                <i class="fas fa-chevron-circle-right"></i>
+                                </div>
+
+                            
+                            </article>
+
+                            <article class="release">
+                                <h2>
+                                    <i class="fas fa-headphones"></i>
+                                    New Releases</h2>
+                                <div>
+                                    <figure>
+                                        <a href="#" title=""><img src="./img/notice1.jpg" alt="아이들"></a>
+                                        <figcaption>
+                                            <a href="#" title="아이들">아이들X그루비룸
+                                                ‘Last Dance’  (04/29)</a>
+                                        </figcaption>
+                                    </figure>
+
+                                    <figure>
+                                        <a href="#" title="">
+                                            <img src="./img/notice2.jpg" alt="아이들"></a>
+                                        <figcaption>
+                                            <a href="#" title="아이들">
+                                                (여자)아이들 Digital Single
+                                                [HWAA (Dimitri Vegas &#x0026; Like Mike Remix)]
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+
+                                    <figure>
+                                        <a href="#" title="">
+                                            <img src="./img/notice3.jpg" alt="아이들"></a>
+                                        <figcaption>
+                                            <a href="#" title="아이들">(여자)아이들 Digital Single
+                                                [화(火花)]</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </article>
+
+                        </div>
+
+                        <article class="right">
+                            <h2>
+                                <i class="fas fa-envelope"></i>
+                                Letter
+                            </h2>
+                            <div>
+                                <div class="letter">
+
+                                    <figure>
+                                        <div class="letter_img">
+                                            <a href="#" title="아이들 미연 letter"><img src="./img/letter01.jpeg" alt="아이들 미연"></a>
+                                        </div>
+                                        <figcaption>
+                                            <a href="#" title="아이들 미연 letter">
+                                                <span>
+                                                    (G)I-DLE
+                                                </span>
+                                                <span>04.30 01:01</span>
+                                                [미연] 네버버 오늘 봐서 좋았어요💓 다들 잘자☺️</a>
+                                        </figcaption>
+                                    </figure>
+
+                                    <figure>
+                                        <div class="letter_img">
+                                            <a href="#" title="아이들 미연 letter"><img src="./img/letter02.jpeg" alt="아이들 미연"></a>
+                                        </div>
+                                        <figcaption>
+                                            <a href="#" title="아이들 미연 letter">
+                                                <span>
+                                                    (G)I-DLE
+                                                </span>
+                                                <span>04.25 15:36</span>
+                                                [미연] 네버버 일요일 낮엔 다들 모해애~💕 날씨 너무 좋다요 &#x0028;
+                                                &#x03C3;&#x0334;&#x0336;&#x0337;&#x0324; &#x002E;&#x032B;
+                                                &#x03C3;&#x0334;&#x0336;&#x0337;&#x0324; &#x0029;&#x2661; 요즘 집콕 중이라 올릴 사진이 없어서🥺
+                                                사진 찾아보기 크크 오늘도 맛난거 챙겨먹고 행복한 주말 보내기&#x003E;&#x005F;&#x003C; 사랑해요
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+
+                                    <figure>
+                                        <div class="letter_img">
+                                            <a href="#" title="아이들 미연 letter"><img src="./img/letter03.jpeg" alt="아이들 미연 letter"></a>
+                                        </div>
+                                        <figcaption>
+                                            <a href="#" title="아이들">
+                                                <span>
+                                                    (G)I-DLE
+                                                </span>
+                                                <span>04.23 16:37</span>
+                                                [미연] 하쿠 마타도 나두 네버버 보고싶다앙❤️ 이제 금요일이니까 조금만 기다리면 화요일에 만난다요☺️ 얼른
+                                                달려갈게엥&#x003E;&#x005F;&#x005F;&#x003C;</a>
+                                        </figcaption>
+                                    </figure>
+
+                                    <figure>
+                                        <div class="letter_img">
+                                            <a href="#" title="아이들 소연 letter"><img src="./img/letter04.jpeg" alt="아이들 소연"></a>
+                                        </div>
+                                        <figcaption>
+                                            <a href="#" title="아이들 소연 letter">
+                                                <span>
+                                                    (G)I-DLE
+                                                </span>
+                                                <span>04.30 01:01</span>
+                                                [소연] 내버링&#x2661;주말에 동생이랑 서울숲에 갔었어어&#x2661; 우리 내버링들은 뭐해요</a>
+                                        </figcaption>
+                                    </figure>
+
+                                    <figure>
+                                        <div class="letter_img">
+                                            <a href="#" title="아이들 미연 letter"><img src="./img/letter05.jpeg" alt="아이들 미연"></a>
+                                        </div>
+                                        <figcaption>
+                                            <a href="#" title="아이들 미연 letter">
+                                                <span>
+                                                    (G)I-DLE
+                                                </span>
+                                                <span>04.18 21:26</span>
+                                                [미연] 네버버 무해요?❤️ 사진첩 보다가 발견ㅎㅎ &#x0028; &#x03C3;&#x0334;&#x0336;&#x0337;&#x0324;
+                                                &#x002E;&#x032B; &#x03C3;&#x0334;&#x0336;&#x0337;&#x0324; &#x0029;&#x2661; 얼른
+                                                여름이 왔으면 좋겠어요☺️ 아직 너무 춥댜!!! ㅎㅎ</a>
+                                        </figcaption>
+                                    </figure>
+
+                                    <!-- <figure> <div class="letter_img"> <a href="#" title="아이들 소연 letter"><img
+                                    src="./img/letter06.jpeg" alt="아이들 소연"></a> </div> <figcaption> <a href="#"
+                                    title="아이들 소연 letter"> <span> (G)I-DLE </span> <span>04.17 19:22</span> [소연] 네버링
+                                    뭐해 나는 혼궈중</a> </figcaption> </figure>-->
+
+                                </div>
+                                <div class="bottom">
+
+                                    <ul class="list">
+
+                                        <li>
+                                            <a href="#" title="" class="btn">&#x003C;</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="">1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="">2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="">3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="">4</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="">5</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="" class="btn">&#x003E;
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                    <fieldset>
+                                        <select>
+                                            <option>제목+내용</option>
+                                            <option>제목</option>
+                                            <option>내용</option>
+                                        </select>
+                                        <input type="search">
+                                        <button class="searchbtn" type="submit">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </article>
+
+                    </section>
+
+                    <section class="sec03">
+
+                        <h2>
+                            <i class="fab fa-gratipay"></i>
+                            goods shop</h2>
+
+                        <!-- <ul class="goods"> <li> <a href="#" title="공식 응원봉"> <img
+                        src="./img/goods1.jpg" alt="[(G)I-DLE]_2021 SEASON'S GREETINGS"> <p>[(G)I-DLE]
+                        공식 응원봉</p> </a> </li> <li> <a href="#" title=""> <img src="./img/goods2.jpg"
+                        title="[(G)I-DLE]_2021 SEASON'S GREETINGS"> <p>[(G)I-DLE]_2021 SEASON'S
+                        GREETINGS</p> </a> </li> <li> <a href="#" title="포토북"> <img
+                        src="./img/goods3.jpg" alt="포토북"> <p> [(G)I-DLE]I-LAND:WHO AM I - PHOTO BOOK</p>
+                        </a> </li> <li> <a href="#" title="아크릴 키링"><img src="./img/goods4.jpg" alt="아크릴
+                        키링"> <p>[GBC in the NEVERLAND]_아크릴 키링</p> </a> </li> </ul> <i class="fas
+                        fa-angle-left icon01" onclick="moveLeft();"></i> <i class="fas fa-angle-right
+                        icon01" onclick="moveRight();"></i> -->
+
+                        <!-- Swiper -->
+                        <div class="swiper-container mySwiper">
+                            <ul class="goods swiper-wrapper">
+
+                                <li class="swiper-slide">
+                                    <a href="http://www.cubee.co.kr/shop/shopdetail.html?branduid=625362&xcode=002&mcode=020&scode=&type=X&search=&sort=order" title="공식 응원봉">
+                                        <img src="./img/goods1.jpg" alt="[(G)I-DLE]_2021 SEASON'S GREETINGS">
+                                        <p>[(G)I-DLE] 공식 응원봉</p>
+                                    </a>
+                                </li>
+
+                                <li class="swiper-slide">
+                                    <a href="http://www.cubee.co.kr/shop/shopdetail.html?branduid=639978&xcode=002&mcode=020&scode=&type=X&search=&sort=order" title="">
+                                        <img src="./img/goods2.jpg" title="[(G)I-DLE]_2021 SEASON'S GREETINGS">
+                                        <p>[(G)I-DLE]_2021 SEASON'S GREETINGS</p>
+                                    </a>
+                                </li>
+
+                                <li class="swiper-slide">
+                                    <a href="http://www.sound-wave.co.kr/shop/shopdetail.html?branduid=3319837" title="포토북">
+                                        <img src="./img/goods3.jpg" alt="포토북">
+                                        <p>
+                                            [(G)I-DLE]I-LAND:WHO AM I - PHOTO BOOK</p>
+                                    </a>
+                                </li>
+
+                                <li class="swiper-slide">
+                                    <a href="http://www.cubee.co.kr/shop/shopdetail.html?branduid=638298&xcode=002&mcode=020&scode=&type=X&search=&sort=order" title="아크릴 키링"><img src="./img/goods4.jpg" alt="아크릴 키링">
+                                        <p>[GBC in the NEVERLAND]_아크릴 키링</p>
+                                    </a>
+                                </li>
+
+                                <li class="swiper-slide">
+                                    <a href="http://www.cubee.co.kr/shop/shopdetail.html?branduid=638300&xcode=002&mcode=020&scode=&type=X&search=&sort=order" title="엽서 세트">
+                                        <img src="./img/goods5.jpg" alt="엽서 세트">
+                                        <p>[GBC in the NEVERLAND]_엽서 세트</p>
+                                    </a>
+                                </li>
+
+                                <li class="swiper-slide">
+                                    <a href="http://www.cubee.co.kr/shop/shopdetail.html?branduid=638301&xcode=002&mcode=020&scode=&type=X&search=&sort=order" title="배지 세트">
+                                        <img src="./img/goods6.jpg" alt="배지 세트">
+                                        <p>[GBC in the NEVERLAND]_배지 세트</p>
+                                    </a>
+                                </li>
+
+                                <li class="swiper-slide">
+                                    <a href="http://www.cubee.co.kr/shop/shopdetail.html?branduid=633847&xcode=002&mcode=020&scode=&type=X&search=&sort=order" title="[(G)I-DLE] 응원봉 데코 스티커">
+                                        <img src="./img/goods7.jpg" alt="[(G)I-DLE] 응원봉 데코 스티커">
+                                        <p>[(G)I-DLE] 응원봉 데코 스티커</p>
+                                    </a>
+                                </li>
+
+                                <li class="swiper-slide">
+                                    <a href="http://www.cubee.co.kr/shop/shopdetail.html?branduid=638296&xcode=002&mcode=020&scode=&type=X&search=&sort=order" title="후드 티셔츠">
+                                        <img src="./img/goods8.jpg" alt="후드 티셔츠">
+                                        <p>[GBC in the NEVERLAND]_후드 티셔츠</p>
+                                    </a>
+                                </li>
+
+                                <li class="swiper-slide">
+                                    <a href="http://www.cubee.co.kr/shop/shopdetail.html?branduid=638297&xcode=002&mcode=020&scode=&type=X&search=&sort=order" title="노트북 파우치">
+                                        <img src="./img/goods9.jpg" alt="노트북 파우치">
+                                        <p>[GBC in the NEVERLAND]_노트북 파우치</p>
+                                    </a>
+                                </li>
+
+                                <li class="swiper-slide">
+                                    <a href="http://www.cubee.co.kr/shop/shopdetail.html?branduid=635758&xcode=001&mcode=018&scode=&type=X&search=&sort=order" title="덤디덤디">
+                                        <img src="./img/goods10.jpg" alt="덤디덤디">
+                                        <p>덤디덤디 : DUMDi DUMDi (DAY Ver.)</p>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <!-- Swiper JS -->
+                    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+                    <!-- Initialize Swiper -->
+                    <script>
+                        var swiper = new Swiper(".mySwiper", {
+                            effect: "coverflow",
+                            grabCursor: true,
+                            centeredSlides: true,
+                            slidesPerView: "auto",
+                            coverflowEffect: {
+                                rotate: 50,
+                                stretch: 0,
+                                depth: 100,
+                                modifier: 1,
+                                slideShadows: true
+                            },
+                            loop: true,
+                            pagination: {
+                                el: ".swiper-pagination"
+                            }
+                        });
+                    </script>
+
+                </section>
+
+            </main>
+
+            <!--푸터 -->
+
+            <!-- 푸터영역 시작 -->
+            <footer class="clearfix">
+
+                <!--푸터 sns-->
+
+                <ul class="sns">
+                    <li>
+                        <a
+                            href="https://www.youtube.com/channel/UCritGVo7pLJLUS8wEu32vow"
+                            title="아이들 유튜브채널">
+                            <img src="./img/sns-02.png" alt="유튜브">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/G_I_DLE" title="아이들 트위터">
+                            <img src="./img/sns-04.png" alt="트위터"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/official_g_i_dle/?hl=ko" title="아이들 인스타그램">
+                            <img src="./img/sns-03.png" alt="인스타그램">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://ko-kr.facebook.com/G.I.DLE.CUBE/" title="아이들 페이스북">
+                            <img src="./img/sns-05.png" alt="페이스북"></a>
+                    </li>
+                </ul>
+
+                <!-- <div> <a href="index.html" title="메인페이지 바로가기"> <img src="./img/logo-w.png"
+                alt="하단 푸터로고"> </a> </div>-->
+                <nav class="f_lnb">
+                    <a href="#" title="이용약관">이용약관 &#124;</a>
+                    <a href="#" title="이메일 주소 무단 수집 거부">이메일 주소 무단 수집 거부 &#124;</a>
+                    <a href="#" title="개인정보처리방침">개인정보처리방침</a>
+                </nav>
+
+                <address>
+
+                    ACHASAN-RO, SEONGDONG-GU, SEOUL, 00000 KOREA.TEL. 02-123-4567<br><br>
+
+                    COPYRIGHT ⓒ CUBE ENTERTAINMENT INC, ALL RIGHT RESERVED.
+
+                </address>
+
+            </footer>
+
+        </div>
+
+    </body>
+
+</html>
